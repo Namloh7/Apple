@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(238, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+header img {
+  height: 20px;
+  align-self: flex-start;
+}
+
+header button {
+  border: none;
+  cursor: pointer;
+}
