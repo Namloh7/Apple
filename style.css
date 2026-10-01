@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family:
+    SF Pro Display,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+header nav {
+  background-color: rgb(238, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  padding: 0 20px;
+  gap: 4px;
+}
+
+header img {
+  height: 20px;
+}
+
+header button {
+  border: none;
+  cursor: pointer;
+}
+
+.productCards {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.productCards button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 89, 255);
+  border: none;
+  border-radius: 980px;
+  padding: 9px 16px;
+}
+
+#iPhoneImage {
+  background-image: url("1st.jpg");
+  color: white;
+}
