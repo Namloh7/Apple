@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --gray-text: rgb(66, 66, 69);
+  --light-gray-color: rgba(245, 245, 247, 0.8);
+  --button-blue: rgb(0, 89, 255);
+  --gray-background: rgb(207, 204, 204);
+  --basic-white-color: white;
+  --basic-black-color: black;
+}
 body {
   font-family:
     SF Pro Display,
@@ -20,7 +28,7 @@ header nav {
   overflow: hidden;
   padding-inline-start: max(22px);
   padding-inline-end: max(22px);
-  background-color: rgba(245, 245, 247, 0.8);
+  background-color: var(--light-gray-color);
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -34,16 +42,10 @@ header nav {
 header img {
   height: 25px;
 }
-.nav-icon-right {
+.nav__icon--right {
   opacity: 0.6;
   height: 16px;
 }
-
-header button {
-  border: none;
-  cursor: pointer;
-}
-
 .productCards {
   width: 100%;
   background-size: cover;
@@ -55,13 +57,13 @@ header button {
   flex-direction: column;
   padding-block: 50px;
 }
-.productCardsGrid {
+.productCards--grid {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px;
   gap: 15px;
 }
-.halfProductCard {
+.productCard--half {
   padding-top: 15px;
   text-align: center;
 }
@@ -76,7 +78,7 @@ header button {
   flex-direction: column;
   gap: 10px;
 }
-.productCards--image {
+.productCards__image {
   width: 50vw;
 }
 
@@ -87,34 +89,34 @@ button {
   cursor: pointer;
 }
 
-.button-outline {
+.button--outline {
   background-color: transparent;
-  border: 1px solid rgb(41, 151, 255);
-  color: rgb(41, 151, 255);
+  border: 1px solid var(--button-blue);
+  color: var(--button-blue);
 }
-.button-outline:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 89, 255);
+.button--outline:hover {
+  color: var(--basic-white-color);
+  background-color: var(--button-blue);
 }
-.button-fill {
-  background-color: rgb(0, 89, 255);
-  color: white;
+.button--fill {
+  background-color: var(--button-blue);
+  color: var(--basic-white-color);
 }
 .iphone {
-  background-color: black;
+  background-color: var(--basic-black-color);
   text-align: center;
-  color: white;
+  color: var(--basic-white-color);
 }
 .duo {
-  background-color: white(235, 235, 240);
+  background-color: var(--basic-white-color);
   text-align: center;
-  color: black;
+  color: var(--basic-black-color);
   padding-bottom: 0;
 }
 .appleWatch {
-  background-color: black;
+  background-color: var(--basic-black-color);
   text-align: center;
-  color: white;
+  color: var(--basic-white-color);
 }
 .buttonRow {
   display: flex;
@@ -123,40 +125,40 @@ button {
   gap: 10px;
 }
 .watchUltra {
-  background-color: black;
-  color: white;
+  background-color: var(--basic-black-color);
+  color: var(--basic-white-color);
 }
 .macMini,
 .macBookAir,
 .iPadAir,
 .airPodsPro3 {
-  background-color: rgb(207, 204, 204);
-  color: black;
+  background-color: var(--gray-background);
+  color: var(--basic-black-color);
 }
 .airPods5 {
   padding-top: 60%;
   padding-bottom: 20px;
-  color: white;
-  background-image: url(airpods5.jpg);
+  color: var(--basic-white-color);
+  background-image: url(images/airpods5.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.footerSection.links {
+.footer--container.links {
   display: flex;
   flex-direction: row;
   gap: 50px;
   align-items: flex-start;
 }
 
-.columnFooter {
+.footer--column {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.footerSection.links .links,
-.footerSection.links .footerLinks {
+.footer--container.links .links,
+.footer--container.links .footer--links {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -167,7 +169,7 @@ footer {
   padding-left: 100px;
   padding-right: 100px;
 }
-.footerSection {
+.footer--container {
   padding-top: 30px;
   padding-bottom: 30px;
 }

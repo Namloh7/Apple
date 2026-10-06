@@ -6,15 +6,15 @@
   font-size: 28px;
   font-weight: 400;
 }
-.nav-text {
-  color: rgba(0, 0, 0, 0.8);
+.nav__text {
+  color: var(--basic-black-color);
   font-size: 12px;
   font-weight: 400;
 }
 .plain-text {
   font-size: 14px;
   font-weight: 400;
-  color: rgb(66, 66, 69);
+  color: var(--light-gray-color);
 }
 footer label {
   font-size: 16px;
