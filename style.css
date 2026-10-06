@@ -33,7 +33,6 @@ header nav {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 44px;
   width: 100%;
   padding: 0 20px;
@@ -43,10 +42,23 @@ header nav {
 header img {
   height: 25px;
 }
+.nav--fullSize {
+  display: flex;
+  justify-content: center;
+}
+.nav--fullSize .nav__icon--right:first-of-type {
+  margin-left: auto;
+}
+.nav--mobileSize {
+  display: none;
+  justify-content: space-between;
+}
 .nav__icon--right {
   opacity: 0.6;
   height: 16px;
+  justify-content: flex-start;
 }
+
 .productCards {
   max-width: 100%;
   background-size: cover;
