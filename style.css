@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --gray-text: rgb(66, 66, 69);
+  --light-gray-color: rgba(245, 245, 247, 0.8);
+  --button-blue: rgb(0, 89, 255);
+  --gray-background: rgb(207, 204, 204);
+  --basic-white-color: white;
+  --basic-black-color: black;
+}
 body {
   font-family:
     SF Pro Display,
@@ -16,27 +24,29 @@ body {
 }
 
 header nav {
-  background-color: rgb(238, 235, 235);
+  position: fixed;
+  overflow: hidden;
+  padding-inline-start: max(22px);
+  padding-inline-end: max(22px);
+  background-color: var(--light-gray-color);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 44px;
   width: 100%;
   padding: 0 20px;
-  gap: 4px;
+  gap: 20px;
 }
 
 header img {
-  height: 20px;
+  height: 25px;
 }
-
-header button {
-  border: none;
-  cursor: pointer;
+.nav__icon--right {
+  opacity: 0.6;
+  height: 16px;
 }
-
 .productCards {
-  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -45,16 +55,121 @@ header button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-block: 50px;
 }
-.productCards button {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 89, 255);
+.productCards--grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  gap: 15px;
+}
+.productCard--half {
+  padding-top: 15px;
+  text-align: center;
+}
+.halfProductCard img {
+  padding-top: 10px;
+  max-width: 50%;
+  height: auto;
+}
+
+.productCards--content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productCards__image {
+  width: 50vw;
+}
+
+button {
   border: none;
   border-radius: 980px;
   padding: 9px 16px;
+  cursor: pointer;
 }
 
-#iPhoneImage {
-  background-image: url("1st.jpg");
-  color: white;
+.button--outline {
+  background-color: transparent;
+  border: 1px solid var(--button-blue);
+  color: var(--button-blue);
+}
+.button--outline:hover {
+  color: var(--basic-white-color);
+  background-color: var(--button-blue);
+}
+.button--fill {
+  background-color: var(--button-blue);
+  color: var(--basic-white-color);
+}
+.iphone {
+  background-color: var(--basic-black-color);
+  text-align: center;
+  color: var(--basic-white-color);
+}
+.duo {
+  background-color: var(--basic-white-color);
+  text-align: center;
+  color: var(--basic-black-color);
+  padding-bottom: 0;
+}
+.appleWatch {
+  background-color: var(--basic-black-color);
+  text-align: center;
+  color: var(--basic-white-color);
+}
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 10px;
+}
+.watchUltra {
+  background-color: var(--basic-black-color);
+  color: var(--basic-white-color);
+}
+.macMini,
+.macBookAir,
+.iPadAir,
+.airPodsPro3 {
+  background-color: var(--gray-background);
+  color: var(--basic-black-color);
+}
+.airPods5 {
+  padding-top: 60%;
+  padding-bottom: 20px;
+  color: var(--basic-white-color);
+  background-image: url(images/airpods5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer--container.links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.footer--column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer--container.links .links,
+.footer--container.links .footer--links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer--container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
