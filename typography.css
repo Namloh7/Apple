@@ -14,7 +14,7 @@
 .plain-text {
   font-size: 14px;
   font-weight: 400;
-  color: var(--light-gray-color);
+  color: var(--gray-text);
 }
 footer label {
   font-size: 16px;
