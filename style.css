@@ -12,6 +12,7 @@
   --gray-background: rgb(207, 204, 204);
   --basic-white-color: white;
   --basic-black-color: black;
+  --max-width-mobile: 768px;
 }
 body {
   font-family:
@@ -47,7 +48,7 @@ header img {
   height: 16px;
 }
 .productCards {
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,11 +64,12 @@ header img {
   padding: 10px;
   gap: 15px;
 }
+
 .productCard--half {
   padding-top: 15px;
   text-align: center;
 }
-.halfProductCard img {
+.productCard--half img {
   padding-top: 10px;
   max-width: 50%;
   height: auto;
@@ -79,7 +81,7 @@ header img {
   gap: 10px;
 }
 .productCards__image {
-  width: 50vw;
+  width: 100%;
 }
 
 button {
@@ -169,7 +171,27 @@ footer {
   padding-left: 100px;
   padding-right: 100px;
 }
+
 .footer--container {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  header nav {
+    overflow-x: scroll;
+  }
+  .footer--container.links {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer {
+    padding: 20px 16px;
+  }
+
+  .productCards--grid {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+  }
 }
