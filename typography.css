@@ -1,12 +1,25 @@
 .primaryHeading {
+  font-size: 56px;
+  font-weight: 600;
 }
 .secondaryHeading {
-  font-family:
-    SF Pro Display,
-    SF Pro Icons,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size:;
+  font-size: 28px;
+  font-weight: 400;
+}
+.nav-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+}
+.plain-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(66, 66, 69);
+}
+footer label {
+  font-size: 16px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
 }

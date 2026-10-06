@@ -16,18 +16,27 @@ body {
 }
 
 header nav {
-  background-color: rgb(238, 235, 235);
+  position: fixed;
+  overflow: hidden;
+  padding-inline-start: max(22px);
+  padding-inline-end: max(22px);
+  background-color: rgba(245, 245, 247, 0.8);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 44px;
   width: 100%;
   padding: 0 20px;
-  gap: 4px;
+  gap: 20px;
 }
 
 header img {
-  height: 20px;
+  height: 25px;
+}
+.nav-icon-right {
+  opacity: 0.6;
+  height: 16px;
 }
 
 header button {
@@ -36,7 +45,6 @@ header button {
 }
 
 .productCards {
-  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -45,16 +53,121 @@ header button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-block: 50px;
 }
-.productCards button {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 89, 255);
+.productCardsGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  gap: 15px;
+}
+.halfProductCard {
+  padding-top: 15px;
+  text-align: center;
+}
+.halfProductCard img {
+  padding-top: 10px;
+  max-width: 50%;
+  height: auto;
+}
+
+.productCards--content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productCards--image {
+  width: 50vw;
+}
+
+button {
   border: none;
   border-radius: 980px;
   padding: 9px 16px;
+  cursor: pointer;
 }
 
-#iPhoneImage {
-  background-image: url("1st.jpg");
+.button-outline {
+  background-color: transparent;
+  border: 1px solid rgb(41, 151, 255);
+  color: rgb(41, 151, 255);
+}
+.button-outline:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 89, 255);
+}
+.button-fill {
+  background-color: rgb(0, 89, 255);
   color: white;
+}
+.iphone {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.duo {
+  background-color: white(235, 235, 240);
+  text-align: center;
+  color: black;
+  padding-bottom: 0;
+}
+.appleWatch {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 10px;
+}
+.watchUltra {
+  background-color: black;
+  color: white;
+}
+.macMini,
+.macBookAir,
+.iPadAir,
+.airPodsPro3 {
+  background-color: rgb(207, 204, 204);
+  color: black;
+}
+.airPods5 {
+  padding-top: 60%;
+  padding-bottom: 20px;
+  color: white;
+  background-image: url(airpods5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footerSection.links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.columnFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerSection.links .links,
+.footerSection.links .footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footerSection {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
