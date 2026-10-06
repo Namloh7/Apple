@@ -10,31 +10,37 @@
   <body>
     <main>
       <header>
-        <nav class="nav--fullSize">
-          <img src="images/apple.png" alt="apple logo" />
-          <a class="nav__text">Obchod</a>
-          <a class="nav__text">Mac</a>
-          <a class="nav__text">iPad</a>
-          <a class="nav__text">iPhone</a>
-          <a class="nav__text">Watch</a>
-          <a class="nav__text">AirPods</a>
-          <a class="nav__text">TV a Domácnost</a>
-          <a class="nav__text">Zábava</a>
-          <a class="nav__text">Doplňky</a>
-          <a class="nav__text">Podpora</a>
-          <img src="images/search.png" alt="search" class="nav__icon--right" />
-          <img
-            src="images/shopping-cart.png"
-            alt="shopping cart"
-            class="nav__icon--right"
-          />
-        </nav>
-        <nav class="nav--mobileSize">
-          <img src="images/apple.png" alt="apple logo" />
-          <div>
+        <nav>
+          <div class="div--normalSize">
+            <img src="images/apple.png" alt="apple logo" />
+            <a class="nav__text">Obchod</a>
+            <a class="nav__text">Mac</a>
+            <a class="nav__text">iPad</a>
+            <a class="nav__text">iPhone</a>
+            <a class="nav__text">Watch</a>
+            <a class="nav__text">AirPods</a>
+            <a class="nav__text">TV a Domácnost</a>
+            <a class="nav__text">Zábava</a>
+            <a class="nav__text">Doplňky</a>
+            <a class="nav__text">Podpora</a>
+          </div>
+
+          <div class="div--rolledOut">
+            <a>Obchod</a>
+            <a>Mac</a>
+            <a>iPad</a>
+            <a>iPhone</a>
+            <a>Watch</a>
+            <a>AirPods</a>
+            <a>TV a Domácnost</a>
+            <a>Zábava</a>
+            <a>Doplňky</a>
+            <a>Podpora</a>
+          </div>
+          <div class="nav__icons--right">
             <img src="images/search.png" alt="search" />
             <img src="images/shopping-cart.png" alt="shopping cart" />
-            <img src="images/menu.png" alt="menu" />
+            <img src="images/menu.png" alt="menu" id="menuButton" />
           </div>
         </nav>
       </header>
@@ -269,6 +275,7 @@
           </p>
         </div>
       </footer>
+      <script src="index.js"></script>
     </main>
   </body>
 </html>
